@@ -12,8 +12,7 @@ class BlocDisplayWidget extends StatefulWidget {
 }
 
 class _BlocDisplayWidgetState extends State<BlocDisplayWidget> {
-
-  // initState() : 위젯이 생성될때 처음으로 호출되는 메서드
+  // initState() : 위젯이 생성될 때 처음으로 호출되는 메서드
   // initState()을 통해 CountBloc()을 생성
   @override
   void initState() {
@@ -21,6 +20,13 @@ class _BlocDisplayWidgetState extends State<BlocDisplayWidget> {
     countBloc = CountBloc();
   }
 
+  // dispose(): 위젯이 종료될 때 호출되는 메서드
+  // dispose()을 통해 countBloc을 종료시켜 메모리 누수를 방지한다.
+  @override
+  void dispose() {
+    super.dispose();
+    countBloc.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,14 +44,14 @@ class _BlocDisplayWidgetState extends State<BlocDisplayWidget> {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-               // countBloc에서 add() 이벤트를 호출
+              // countBloc에서 add() 이벤트를 호출
               countBloc.add();
             },
           ),
           IconButton(
             icon: Icon(Icons.remove),
             onPressed: () {
-               // countBloc에서 remove() 이벤트를 호출
+              // countBloc에서 remove() 이벤트를 호출
               countBloc.remove();
             },
           )
