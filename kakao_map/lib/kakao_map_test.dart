@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kakaomap_webview/kakaomap_webview.dart';
 
-const String kakaoMapKey = 'e1f4162a2b89749eef765e50cfbe3574';
+const String kakaoMapKey = 'yourKey';
 
 class KakaoMapTest extends StatelessWidget {
   @override
