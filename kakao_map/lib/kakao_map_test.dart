@@ -46,7 +46,7 @@ class KakaoMapTest extends StatelessWidget {
 
     /// This is short form of the above comment
     String url =
-        await util.getMapScreenURL(38.402056, 127.108212, name: 'Kakao 본ddd사');
+        await util.getMapScreenURL(33.402056, 127.108212, name: 'Kakao 본사');
 
     Navigator.push(
         context, MaterialPageRoute(builder: (_) => KakaoMapScreen(url: url)));
