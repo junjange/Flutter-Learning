@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
+        // MultiProvider를 통혀 여러가지 Provider를 관리
         home: MultiProvider(
-            // MultiProvider 통해 변화에 대해 구독
+          
+            // ChangeNotifierProvider 통해 변화에 대해 구독
             providers: [
               ChangeNotifierProvider(
                   create: (BuildContext context) => EvProvider())
