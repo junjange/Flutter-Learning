@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kakaomap_webview/kakaomap_webview.dart';
 
-const String kakaoMapKey = 'e1f4162a2b89749eef765e50cfbe3574';
+const String kakaoMapKey = 'yourKey';
 
 
 class KakaoMapTest extends StatelessWidget {
@@ -74,7 +74,11 @@ class KakaoMapTest extends StatelessWidget {
 
     /// This is short form of the above comment
     String url =
+<<<<<<< HEAD
         await util.getMapScreenURL(37.402056, 127.108212, name: 'Kakao 본사');
+=======
+        await util.getMapScreenURL(33.450701, 126.570667, name: 'Kakao 본사');
+>>>>>>> 906b5ed8130ea0be696fcc90d7425642e7516453
 
     Navigator.push(
         context, MaterialPageRoute(builder: (_) => KakaoMapScreen(url: url)));
