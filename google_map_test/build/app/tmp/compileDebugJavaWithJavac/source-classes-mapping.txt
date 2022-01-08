@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/google_map_test/BuildConfig.java
+ com.example.google_map_test.BuildConfig
